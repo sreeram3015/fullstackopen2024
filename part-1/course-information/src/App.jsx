@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "./components";
+import { Header, Content } from "./components";
 
 const App = () => {
   const course = "Half Stack application development";
@@ -13,6 +13,14 @@ const App = () => {
   return (
     <div>
       <Header course={course} />
+      <Content
+        part1={part1}
+        exercises1={exercises1}
+        part2={part2}
+        exercises2={exercises2}
+        part3={part3}
+        exercises3={exercises3}
+      />
     </div>
   );
 };
