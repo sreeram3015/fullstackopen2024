@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Statistics from "./components/Statistics";
 
 const App = () => {
   // State hooks for feedback counts
@@ -22,13 +23,14 @@ const App = () => {
       <button onClick={handleNeutralClick}>Neutral</button>
       <button onClick={handleBadClick}>Bad</button>
 
-      <h2>Statistics</h2>
-      <p>Good: {good}</p>
-      <p>Neutral: {neutral}</p>
-      <p>Bad: {bad}</p>
-      <p>All: {total}</p>
-      <p>Average: {average}</p>
-      <p>Positive: {percentagePositive}</p>
+      <Statistics
+        good={good}
+        bad={bad}
+        neutral={neutral}
+        total={total}
+        average={average}
+        percentagePositive={percentagePositive}
+      />
     </div>
   );
 };
