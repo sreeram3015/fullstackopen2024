@@ -17,4 +17,4 @@ This project is a learning exercise aimed at understanding how to:
 - Use Vite to initialize a React application.
 - Create and use React components.
 - Pass data between components using props.
-- Refactor components for better modularity and separation of concerns.
+- Refactor components for better modularity and separation of concerns by managing course data as a single object.
