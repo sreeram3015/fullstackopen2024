@@ -19,7 +19,10 @@ const Statistics = ({
           <StatisticLine text="Bad" value={bad} />
           <StatisticLine text="All" value={total} />
           <StatisticLine text="Average" value={average} />
-          <StatisticLine text="Positive" value={percentagePositive} />
+          <StatisticLine
+            text="Positive"
+            value={percentagePositive.toFixed(2)}
+          />
         </>
       ) : (
         <p>No feedback given</p>

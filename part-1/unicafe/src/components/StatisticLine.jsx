@@ -5,6 +5,7 @@ const StatisticLine = ({ text, value }) => {
     <div>
       <p>
         {text}: {value}
+        {text === "Positive" ? "%" : " "}
       </p>
     </div>
   );
