@@ -1,4 +1,5 @@
 import React from "react";
+import StatisticLine from "./StatisticLine";
 
 const Statistics = ({
   good,
@@ -13,12 +14,12 @@ const Statistics = ({
       <h2>Statistics</h2>
       {total > 0 ? (
         <>
-          <p>Good: {good}</p>
-          <p>Neutral: {neutral}</p>
-          <p>Bad: {bad}</p>
-          <p>All: {total}</p>
-          <p>Average: {average}</p>
-          <p>Positive: {percentagePositive}</p>
+          <StatisticLine text="Good" value={good} />
+          <StatisticLine text="Neutral" value={neutral} />
+          <StatisticLine text="Bad" value={bad} />
+          <StatisticLine text="All" value={total} />
+          <StatisticLine text="Average" value={average} />
+          <StatisticLine text="Positive" value={percentagePositive} />
         </>
       ) : (
         <p>No feedback given</p>
