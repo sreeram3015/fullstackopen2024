@@ -2,12 +2,17 @@ import React from "react";
 
 const StatisticLine = ({ text, value }) => {
   return (
-    <div>
-      <p>
-        {text}: {value}
-        {text === "Positive" ? "%" : " "}
-      </p>
-    </div>
+    <table>
+      <tbody>
+        <tr>
+          <td>{text}</td>
+          <td>
+            {value}
+            {text === "Positive" ? "%" : ""}
+          </td>
+        </tr>
+      </tbody>
+    </table>
   );
 };
 
